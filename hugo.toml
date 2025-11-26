@@ -6,10 +6,6 @@ theme = "mainroad"
 paginate = "10"
 summaryLength = "20"
 
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
-
 [Author]
   name = "Владимир Богданов"
   bio = "..."
@@ -68,3 +64,7 @@ summaryLength = "20"
     name       = "Learning"
     url        = "/categories/learning/"
     weight     = 3
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
