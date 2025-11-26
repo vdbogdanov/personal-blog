@@ -1,0 +1,70 @@
+baseURL = "https://vdbogdanov.ru/"
+languageCode = "ru"
+defaultContentLanguage = "ru"
+title = "Владимир Богданов | Персональный сайт и технический блог"
+theme = "mainroad"
+paginate = "10"
+summaryLength = "20"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[Author]
+  name = "Владимир Богданов"
+  bio = "..."
+  avatar = "img/placeholder.png"
+
+[Params]
+  description = "Личный блог Владимира Богданова на самые разные темы"
+  copyright = "Владимир Богданов"
+  opengraph = true
+  schema = true
+  readmore = true
+  authorbox = true
+  toc = true
+  pager = true
+  post_meta = ["author", "date", "categories"]
+  mainSections = ["post"]
+
+[Params.logo]
+  image = "img/placeholder.png"
+  title = "На полях инфраструктуры"
+  subtitle = "Владимир Богданов. Персональный сайт и технический блог"
+
+[Params.thumbnail]
+  visibility = ["list", "post"]
+
+[Params.sidebar]
+  home = "right"
+  list = "right"
+  single = false
+  widgets = ["search", "recent", "categories", "taglist", "social"]
+
+[Params.widgets]
+  recent_num = 5
+  categories_counter = false
+  tags_counter = false
+
+[Params.widgets.social]
+  cached = false
+  github = "vdbogdanov"
+
+[menu]
+  [[menu.main]]
+    identifier = "cat-home"
+    name       = "Home"
+    url        = "/"
+    weight     = 1
+
+  [[menu.main]]
+    identifier = "cat-devops"
+    name       = "DevOps"
+    url        = "/categories/devops/"
+    weight     = 2
+
+  [[menu.main]]
+    identifier = "cat-learning"
+    name       = "Learning"
+    url        = "/categories/learning/"
+    weight     = 3
